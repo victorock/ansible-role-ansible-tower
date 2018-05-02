@@ -1,0 +1,7 @@
+- name: "victorock.ansible-tower-setup"
+  include_role: "victorock.ansible-tower-setup"
+  tasks_from: run
+
+- name: "victorock.ansible-tower-config"
+  include_role: "victorock.ansible-tower-config"
+  tasks_from: run

@@ -5,7 +5,6 @@ dependencies:
   - role: geerlingguy.ansible
   - role: victorock.ansible-tower-setup
   - role: victorock.ansible-tower-config
-    run_once: yes
   - role: geerlingguy.pip
     pip_install_packages:
       - name: ansible-tower-cli
