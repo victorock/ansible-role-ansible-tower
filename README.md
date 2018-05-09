@@ -23,14 +23,22 @@ The following dependencies are required:
 dependencies:
   - role: geerlingguy.repo-epel
     when: ansible_os_family == 'RedHat'
+
   - role: geerlingguy.ansible
+
   - role: victorock.ansible-tower-setup
+
   - role: geerlingguy.pip
     pip_install_packages:
       - name: ansible-tower-cli
+      - name: ansible-tower-cli
         virtualenv: "/var/lib/awx/venv/awx"
       - name: ansible-tower-cli
         virtualenv: "/var/lib/awx/venv/ansible"
+      - name: pywinrm
+        virtualenv: "/var/lib/awx/venv/awx"
+      - name: pywinrm
+        virtualenv: "/var/lib/awx/venv/ansible"
       - name: ncclient
         virtualenv: "/var/lib/awx/venv/awx"
       - name: ncclient
@@ -59,6 +67,7 @@ dependencies:
         virtualenv: "/var/lib/awx/venv/awx"
       - name: pan-python
         virtualenv: "/var/lib/awx/venv/ansible"
+
   - role: victorock.ansible-tower-config
 ```
 
