@@ -48,6 +48,7 @@ dependencies:
         virtualenv: "/var/lib/awx/venv/ansible"
 
   - role: victorock.ansible-tower-config
+  - role: victorock.ansible-tower-facts
 
 galaxy_info:
   author: Victor da Costa
