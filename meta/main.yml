@@ -18,6 +18,10 @@ dependencies:
         virtualenv: "/var/lib/awx/venv/awx"
       - name: pywinrm
         virtualenv: "/var/lib/awx/venv/ansible"
+      - name: azure
+        virtualenv: "/var/lib/awx/venv/awx"
+      - name: azure
+        virtualenv: "/var/lib/awx/venv/ansible"
       - name: ncclient
         virtualenv: "/var/lib/awx/venv/awx"
       - name: ncclient
