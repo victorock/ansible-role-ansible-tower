@@ -22,6 +22,18 @@ dependencies:
         virtualenv: "/var/lib/awx/venv/awx"
       - name: azure
         virtualenv: "/var/lib/awx/venv/ansible"
+      - name: google-cloud
+        virtualenv: "/var/lib/awx/venv/awx"
+      - name: google-cloud
+        virtualenv: "/var/lib/awx/venv/ansible"
+      - name: apache-libcloud
+        virtualenv: "/var/lib/awx/venv/awx"
+      - name: apache-libcloud
+        virtualenv: "/var/lib/awx/venv/ansible"
+      - name: boto3
+        virtualenv: "/var/lib/awx/venv/awx"
+      - name: boto3
+        virtualenv: "/var/lib/awx/venv/ansible"
       - name: ncclient
         virtualenv: "/var/lib/awx/venv/awx"
       - name: ncclient
