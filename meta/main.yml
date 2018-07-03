@@ -1,12 +1,6 @@
 ---
 dependencies:
-  - role: geerlingguy.repo-epel
-    when: ansible_os_family == 'RedHat'
-
-  - role: geerlingguy.ansible
-
-  - role: victorock.ansible-tower-setup
-
+  - role: victorock.tower_setup
   - role: geerlingguy.pip
     pip_install_packages:
       - name: ansible-tower-cli
@@ -62,13 +56,13 @@ dependencies:
         virtualenv: "/var/lib/awx/venv/awx"
       - name: pan-python
         virtualenv: "/var/lib/awx/venv/ansible"
-
-  - role: victorock.ansible-tower-config
-  - role: victorock.ansible-tower-facts
+  - role: victorock.tower_config
+  - role: victorock.tower_facts
 
 galaxy_info:
-  author: Victor da Costa
-  description: Deploy Ansible Tower by Red Hat
+  role_name: tower
+  author: "Victor da Costa"
+  description: "Deploy Ansible Tower by Red Hat"
   license: GPLv3
   min_ansible_version: 2.4
   platforms:
@@ -76,5 +70,6 @@ galaxy_info:
     versions:
     - 7
   galaxy_tags:
-    - ansible
+    - automation
+    - system
     - tower
