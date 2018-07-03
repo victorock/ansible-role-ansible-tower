@@ -26,7 +26,7 @@ dependencies:
 
   - role: geerlingguy.ansible
 
-  - role: victorock.ansible-tower-setup
+  - role: victorock.tower_setup
 
   - role: geerlingguy.pip
     pip_install_packages:
@@ -68,7 +68,8 @@ dependencies:
       - name: pan-python
         virtualenv: "/var/lib/awx/venv/ansible"
 
-  - role: victorock.ansible-tower-config
+  - role: victorock.tower_config
+  - role: victorock.tower_facts
 ```
 
 Example Playbook
@@ -80,7 +81,7 @@ Example Playbook
   become: true
 
   roles:
-    - victorock.ansible-tower
+    - victorock.tower
 ```
 
 License
